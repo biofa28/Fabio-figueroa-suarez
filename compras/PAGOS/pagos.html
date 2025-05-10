@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Pago</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="pagos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Registrar Pago</h2>
+        <form action="pagos.php" method="POST" id="pago-form">
+            <div class="form-group">
+                <label for="idFactura">ID Factura:</label>
+                <input type="number" id="idFactura" name="idFactura" class="form-control" required><br><br>
+            </div>
+            <div class="form-group">
+                <label for="fechaPago">Fecha de Pago:</label>
+                <input type="date" id="fechaPago" name="fechaPago" class="form-control" required><br><br>
+            </div>
+            <div class="form-group">
+                <label for="monto">Monto a Pagar:</label>
+                <input type="number" id="monto" name="monto" class="form-control" required><br><br>
+            </div>
+            <div class="form-group">
+                <label for="metodoPago">Método de Pago:</label>
+                <select id="metodoPago" name="metodoPago" class="form-control" required>
+                    <option value="efectivo">Efectivo</option>
+                    <option value="cheque">Cheque</option>
+                    <option value="transferencia">Transferencia</option>
+                </select><br><br>
+            </div>
+            <input type="submit" name="crear_pago" value="Registrar Pago" class="btn btn-primary">
+        </form>
+    </div>
+
+    <script src="pagos.js"></script>
+</body>
+</html>
