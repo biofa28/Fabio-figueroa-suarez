@@ -1,0 +1,116 @@
+/* Estilo general */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Encabezado */
+header {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Navegación */
+nav a {
+  margin: 0 15px;
+  color: #0077cc;
+  text-decoration: none;
+}
+
+/* Contenido principal */
+main {
+  padding: 30px;
+}
+
+/* Sección de habitaciones */
+.habitaciones {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.habitacion {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 10px;
+  width: 300px;
+  background: #fff;
+  box-shadow: 0 0 10px #eee;
+  text-align: center;
+}
+
+.habitacion img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Lista de servicios */
+.servicios {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.servicios li {
+  padding: 5px 0;
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #fafafa;
+  border-top: 1px solid #ddd;
+}
+
+/* Formulario de reserva */
+.formulario {
+  width: 350px;
+  margin: 60px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.formulario h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0077cc;
+}
+
+.formulario label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.formulario input,
+.formulario select,
+.formulario button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.formulario button {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.formulario button:hover {
+  background-color: #005fa3;
+}
