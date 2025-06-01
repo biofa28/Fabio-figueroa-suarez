@@ -1,0 +1,174 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="month"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button.submit-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button.submit-button:hover {
+    background-color: #0056b3;
+}
+
+input[type="checkbox"] {
+    margin-top: 10px;
+}
+
+input[type="checkbox"] + label {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+/* Escondemos secciones dependiendo del método de pago */
+#nequi-section, #pse-section, #credit-card-section {
+    display: none;
+}
+
+/* Estilos específicos para la página de reserva */
+.payment-method {
+  display: none;
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Animación para mostrar secciones */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Estilo para el indicador de progreso */
+.rounded-circle {
+  transition: all 0.3s ease;
+}
+
+/* Validación de formularios */
+.was-validated .form-control:invalid,
+.was-validated .form-select:invalid {
+  border-color: #dc3545;
+}
+
+.was-validated .form-control:valid,
+.was-validated .form-select:valid {
+  border-color: #198754;
+}
+
+/* Ajustes responsive */
+@media (max-width: 768px) {
+  .progress-steps {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .progress-step {
+    margin-bottom: 15px;
+  }
+}
+/* Contenedor del logo para reservas */
+.logo-container-reserva {
+  max-width: 120px; /* Controla el ancho máximo */
+  margin: 0 auto; /* Centra el contenedor */
+}
+
+/* Estilos para el logo en reservas */
+.logo-reserva {
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  height: auto; /* Mantiene proporciones */
+  max-height: 60px; /* Altura máxima para pantallas grandes */
+  object-fit: contain; /* Asegura que la imagen no se distorsione */
+}
+
+/* Media queries para responsividad */
+@media (max-width: 992px) {
+  .logo-container-reserva {
+    max-width: 100px;
+  }
+  .logo-reserva {
+    max-height: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-container-reserva {
+    max-width: 80px;
+  }
+  .logo-reserva {
+    max-height: 40px;
+  }
+}
+
+/* Estilos para el recibo de pago */
+.payment-receipt {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.receipt-details {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+}
+
+.receipt-details .row {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.receipt-details .row:last-child {
+  border-bottom: none;
+}
+
+.receipt-footer {
+  color: #666;
+  font-size: 0.9rem;
+}
