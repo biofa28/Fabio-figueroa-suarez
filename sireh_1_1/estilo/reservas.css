@@ -1,0 +1,16 @@
+body { background: #f7f9fc; }
+.step-container { max-width: 550px; margin: 3rem auto; background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 8px 24px rgba(0,0,0,0.05); }
+.step-header { font-weight: 700; font-size: 1.75rem; margin-bottom: 1.5rem; color: #4a3f35; }
+.hidden { display: none !important; }
+.invoice { background: #fff9e6; border-left: 6px solid #f9b900; padding: 1rem 1.5rem; border-radius: 8px; }
+.btn-primary-custom {
+  background: #f9b900;
+  border-color: #f9b900;
+  color: #4a3f35;
+  font-weight: 700;
+}
+.btn-primary-custom:hover {
+  background: #d49f00;
+  border-color: #d49f00;
+  color: #fff;
+}
